@@ -1,0 +1,196 @@
+body {
+  padding: 10px 30px 0 30px;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Inter;
+  font-weight: 450;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(/assets/Fonts/Inter-Black.ttf);
+  src: url(/assets/Fonts/Inter-Bold.ttf);
+  src: url(/assets/Fonts/Inter-ExtraBold.ttf);
+  src: url(/assets/Fonts/Inter-ExtraLight.ttf);
+  src: url(/assets/Fonts/Inter-Light.ttf);
+  src: url(/assets/Fonts/Inter-Medium.ttf);
+  src: url(/assets/Fonts/Inter-Regular.ttf);
+  src: url(/assets/Fonts/Inter-SemiBold.ttf);
+  src: url(/assets/Fonts/Inter-Thin.ttf);
+}
+
+//   all mixin
+@mixin section-title {
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 44px;
+  color: #141C24;
+  margin: 0;
+}
+
+@mixin section-subtitle {
+  font-size: 1.125rem;
+  color: #344051;
+}
+
+@mixin key-feature-three-topic-title {
+  font-size: 1.25rem;
+  color: #002966;
+}
+@mixin key-feature-three-topic-subtitle{
+font-size: 1rem;
+color: #002966;
+}
+@mixin btn-common {
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  display: inline-block;
+  font-size: 1rem;
+}
+
+
+@mixin blue-btn-common {
+  @include btn-common();
+  background: #1a75ff;
+  color: white;
+  border: none;
+  outline: none;
+
+  :hover {
+    color: #1a75ff;
+    transition: 1s;
+  }
+}
+
+@mixin white-btn-common {
+  @include btn-common();
+  color: #344051;
+  border: none;
+  outline: none;
+
+  :hover {
+    background: rgb(190, 189, 189);
+    transition: 1s;
+  }
+}
+
+// navbar
+.navbar-main-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .navbar-item-main {
+    list-style-type: none;
+    display: flex;
+    padding: 10px 20px;
+
+  }
+
+  .nabvar-item {
+    @include btn-common()
+  }
+
+  .navbar-btn {
+    @include blue-btn-common();
+  }
+}
+
+.navbar-line {
+  display: none;
+}
+
+// section 1 girl image
+
+.blue-btn {
+  @include blue-btn-common()
+}
+
+.white-btn {
+  @include white-btn-common()
+}
+
+.girl-image-section-left {
+  width: 49.99%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.girl-section-right {
+  width: 50%;
+}
+
+.small-screen-img {
+  display: none;
+}
+
+.row {
+  display: flex;
+}
+
+.girl-left-title {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.girl-section-font {
+  @include section-subtitle();
+  margin-top: 16px;
+}
+
+.girl-section-btn-main {
+  margin-top: 64px;
+}
+
+.img-girl {
+  position: relative;
+}
+
+.img-card {
+  position: absolute;
+  top: 171%;
+  right: 22%;
+}
+
+// section 3 key benefits
+.section-title {
+  @include section-title();
+  text-align: center;
+}
+
+.our-features {
+  @include section-subtitle();
+  text-align: center;
+}
+
+.image-gallery-item-title{
+  @include key-feature-three-topic-title()
+}
+
+.image-gallery-left-section {
+  width: 50%;
+}
+
+.image-gallery-main {
+  width: 50%;
+}
+
+.img-column {
+  flex: 48% !important;
+  max-width: 48% !important;
+  padding: 0 4px !important;
+}
+
+.image-container {
+  flex-wrap: nowrap;
+  display: flex;
+}.text-decoration-justify{
+  @include key-feature-three-topic-subtitle()
+}.image-gallery-item{
+  margin-bottom: 20PX;
+  padding: 24px;
+}
+
