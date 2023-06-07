@@ -68,23 +68,23 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-  .row .girl-left-title {
+  .row .landing-page-title {
     font-size: 3rem;
     margin: 0; }
-  .row .girl-section-font {
+  .row .landing-page-font {
     font-size: 1.125rem;
     color: #344051;
     margin-top: 16px; }
-  .row .girl-section-btn-main {
+  .row .landing-page-btn-main {
     margin-top: 64px; }
-  .row .img-girl {
+  .row .landing-page-main-image {
     position: relative; }
   .row .img-card {
     position: absolute;
     top: 67%;
     right: 36%;
     display: none; }
-  .row .girl-section-right {
+  .row .landing-page-right {
     width: 50%; }
   .row .small-screen-img {
     display: none; }
@@ -165,35 +165,35 @@ li {
   text-align: center;
   margin: 15px 0 15px 0; }
 
-.saas-main-div .three-topic-sass {
+.saas-main-div .sass-three-point-main {
   display: flex;
   justify-content: center;
   gap: 10px;
   margin-top: 20px;
   margin-bottom: 20px; }
-  .saas-main-div .three-topic-sass .three-topic-parant {
+  .saas-main-div .sass-three-point-main .sass-three-point-parent {
     display: flex;
     gap: 7px; }
 
-.three-card-main {
+.blog-card-main {
   display: flex;
   gap: 24px; }
-  .three-card-main .three-card-subtitle {
+  .blog-card-main .three-card-subtitle {
     font-size: 1.25rem;
     color: #002966;
     margin-bottom: 10px;
     text-align: center; }
-  .three-card-main .blog-card-title {
+  .blog-card-main .blog-card-title {
     font-size: 24px; }
-  .three-card-main .avtar {
+  .blog-card-main .avtar {
     display: flex;
     padding: 14px 0; }
-    .three-card-main .avtar .avtar-name {
+    .blog-card-main .avtar .avtar-name {
       font-size: 14px;
       margin: 0; }
-    .three-card-main .avtar .avtar-name1 {
+    .blog-card-main .avtar .avtar-name1 {
       margin: 0; }
-    .three-card-main .avtar .avtar-text {
+    .blog-card-main .avtar .avtar-text {
       flex-direction: column;
       padding-left: 10px; }
 
@@ -309,11 +309,11 @@ li {
   padding: 5px 6px;
   cursor: pointer; }
 
-.blog-three-card-main .three-btn {
+.blog-three-card-main .blog-btn-main {
   padding: 14px 0;
   display: flex; }
 
-.blog-three-card-main .blog-btn-3 {
+.blog-three-card-main .blog-btn-blue {
   background: #f0f6ff;
   color: #0052cc; }
 
@@ -409,32 +409,34 @@ li {
 @media screen and (max-width: 600px) {
   body {
     padding: 0 15px 0 15px; }
+  .image-gallery-left-section {
+    width: 100% !important; }
   .navbar-item-hidden {
     display: none !important; }
-  .img-girl {
-    display: none; }
-  .small-girl-img {
-    display: block; }
   .row {
     flex-direction: column; }
-    .row .Landing-page-left {
-      width: 100%; }
-    .row .small-girl-img {
-      display: block; }
-    .row .girl-section-btn-main {
-      margin-top: 30px;
-      flex-direction: column;
-      display: flex; }
-    .row .blue-btn {
-      margin-bottom: 10px; }
-    .row .Landing-page-left {
-      width: 100%; }
-    .row .image-gallery-main {
-      width: 100%; }
+  .landing-page-main-image {
+    display: none; }
+  .landing-page-img-small {
+    display: block; }
+  .Landing-page-left {
+    width: 100%; }
+  .landing-page-img-small {
+    display: block; }
+  .landing-page-btn-main {
+    margin-top: 30px;
+    flex-direction: column;
+    display: flex; }
+  .blue-btn {
+    margin-bottom: 10px; }
+  .Landing-page-left {
+    width: 100% !important; }
+  .image-gallery-main {
+    width: 100% !important; }
   .sass-section-btn-main {
     flex-direction: column;
     display: flex; }
-  .three-topic-sass {
+  .sass-three-point-main {
     display: flex;
     flex-direction: column; }
   .question-indivisual {
@@ -443,12 +445,12 @@ li {
     width: 80% !important; }
   .section-6-card-main {
     width: 80% !important; }
-  .three-card-main {
+  .blog-card-main {
     display: flex;
     flex-direction: column; }
-    .three-card-main .profile-card-img {
-      width: 100% !important;
-      height: auto !important; }
+  .profile-card-img {
+    width: 100% !important;
+    height: auto !important; }
   .load-more-btn {
     width: auto !important; }
   .form-section-main {
@@ -467,27 +469,23 @@ li {
   .footer-main {
     display: flex;
     flex-direction: column; }
-    .footer-main .footer-about-section {
-      padding: 10px;
-      width: 90%;
-      text-align: center; }
-    .footer-main .footer-product-company-section {
-      display: flex !important;
-      justify-content: space-between; }
-    .footer-main .footer-main-header {
-      text-align: center;
-      justify-content: center; }
-    .footer-main .footer-company-details-main {
-      display: flex;
-      flex-direction: column; }
+  .footer-about-section {
+    padding: 10px;
+    width: 90%;
+    text-align: center; }
+  .footer-product-company-section {
+    display: flex !important;
+    justify-content: space-between; }
+  .footer-main-header {
+    text-align: center;
+    justify-content: center; }
+  .footer-company-details-main {
+    display: flex;
+    flex-direction: column; }
   .authorship-details {
     display: flex;
     flex-direction: column;
     padding: 10px; } }
-
-@media screen and (min-width: 900px) {
-  .hamburger-menu {
-    display: none; } }
 
 @media screen and (max-width: 900px) and (min-width: 600px) {
   .navbar-main-row .navbar-item-hidden {
@@ -495,13 +493,13 @@ li {
   .row {
     display: flex;
     flex-direction: column !important; }
-  .small-girl-img {
+  .image-gallery-left-section {
+    width: 100% !important; }
+  .landing-page-img-small {
     display: block; }
-  .img-girl {
+  .landing-page-main-image {
     display: none; }
   .Landing-page-left {
-    width: 100% !important; }
-  .image-gallery-left-section {
     width: 100% !important; }
   .image-gallery-main {
     width: 100% !important; }
@@ -509,7 +507,7 @@ li {
     width: 80% !important; }
   .question-indivisual-new-main {
     width: 80% !important; }
-  .three-card-main {
+  .blog-card-main {
     display: flex;
     flex-direction: column !important; }
   .profile-card-img {
@@ -525,3 +523,7 @@ li {
     grid-template-columns: repeat(4, auto); }
   .footer-about-section {
     margin-bottom: 20px; } }
+
+@media screen and (min-width: 900px) {
+  .hamburger-menu {
+    display: none; } }
