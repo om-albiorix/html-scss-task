@@ -1,7 +1,6 @@
 {
   "scripts": {
-    "watch-sass": "node-sass -w css/style.scss css/style.css",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch-sass": "node-sass -w css/style.scss css/style.css"
   },
   "dependencies": {
     "node-sass": "^9.0.0",
