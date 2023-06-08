@@ -1,0 +1,79 @@
+@mixin btn-common {
+  border-radius: 6.25rem;
+  display: inline-block;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 1rem;
+  position: absolute;
+}
+@mixin inputfield {
+  border-radius: 0 4px 4px 0;
+  outline: none;
+  padding: 10px 20px;
+}
+.landing-text {
+  text-align: center;
+  &__btn-main {
+    border-radius: 6rem;
+    background: #f2f9eb;
+    padding: 5px 7px;
+    display: inline-block;
+    &__green {
+      background: #81c43b;
+      color: white;
+      padding: 6px 7px 7px 9px;
+      border-radius: 6rem;
+    }
+  }
+  &__title {
+    font-size: 64px;
+    font-weight: 600;
+    color: #35414b;
+    margin-top: 20px;
+  }
+  &__subtitle {
+    color: #4e5a65;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  &__input-field {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    &__input {
+      @include inputfield();
+      border: 1px solid #e1e5ea;
+    }
+    &__input-btn {
+      @include inputfield();
+      background-color: #794cff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .landing-text {
+    &__btn-main {
+      margin-top: 20px;
+      &__green {
+        display: none;
+      }
+    }
+    &__title {
+      font-size: 32px;
+    }
+    &__input-field {
+      display: block;
+      &__input {
+        border-radius: 4px;
+      }
+      &__input-btn {
+        width: 73%;
+        margin-top: 10px;
+        border-radius: 4px;
+      }
+    }
+  }
+}

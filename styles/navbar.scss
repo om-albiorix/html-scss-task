@@ -1,0 +1,47 @@
+@mixin navbar-item {
+  list-style-type: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+@mixin grid {
+  display: grid;
+  align-items: center;
+}
+.navbar-header {
+  @include grid();
+  grid-template-columns: 269px 456px 300px;
+  grid-column-gap: 100px;
+  &__list {
+    align-items: center;
+    display: flex;
+    &__item {
+      @include navbar-item();
+    }
+  }
+  &__login {
+    display: flex;
+    &__item {
+      @include navbar-item();
+    }
+    &__btn {
+      background: #ece6ff;
+      color: #794cff;
+      border-radius: 4px;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .navbar-header {
+    @include grid();
+    grid-template-columns: auto auto;
+    grid-column-gap: 178px;
+    &__list {
+      display: none;
+    }
+    &__login {
+      &__btn {
+        display: none;
+      }
+    }
+  }
+}
